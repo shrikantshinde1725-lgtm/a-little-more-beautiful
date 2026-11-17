@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf4f1">
+  <meta name="description" content="A little more beautiful because of you. A birthday celebration for Dr. Indumathi Somasundaram.">
+  <title>A Little More Beautiful Because of You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <div class="glow glow-one"></div><div class="glow glow-two"></div>
+    <div id="sparkles"></div><div id="petals"></div>
+  </div>
+
+  <button class="music-toggle" id="musicToggle" aria-label="Play background music" title="Background music">
+    <span class="music-icon">♫</span><span class="music-label">Music</span>
+  </button>
+  <audio id="backgroundMusic" src="music/birthday-music.mp3" preload="auto" loop></audio>
+
+  <main>
+    <!-- PAGE 1 -->
+    <section class="page active hero-page" id="home" data-page="home">
+      <div class="hero-decoration balloons" aria-hidden="true">
+        <span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow reveal">18 November 2026</p>
+        <div class="ornament reveal"><span></span>✧<span></span></div>
+        <p class="small-intro reveal">A day to celebrate someone extraordinary</p>
+        <h1 class="hero-title reveal">Wishing You a Very<br><em>Happy Birthday, Ji!</em></h1>
+        <p class="hero-name reveal">Dr. Indumathi Somasundaram</p>
+        <div class="gold-rule reveal"></div>
+        <div class="hero-message reveal">
+          <p>Today is a celebration of someone truly special.</p>
+          <p>A celebration of your journey, your accomplishments, your dreams and the countless little moments that make you who you are.</p>
+          <p>May this new chapter of your life be filled with happiness, good health, beautiful experiences and opportunities beyond imagination.</p>
+          <p>May you continue to learn, inspire, create and touch countless lives along the way.</p>
+          <p>Wishing you a year as wonderful and extraordinary as the person you are.</p>
+        </div>
+        <div class="envelope-area reveal">
+          <p class="envelope-teaser">Because you deserve more than just a birthday wish...</p>
+          <p class="envelope-subtext">There is a little something special, thoughtfully created just for you.</p>
+          <button class="envelope-button" id="openSurprise">
+            <span class="envelope-art"><span class="envelope-heart">♥</span></span>
+            <span class="envelope-cta">OPEN YOUR SURPRISE</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" id="celebration" data-page="celebration">
+      <div class="page-shell">
+        <header class="page-heading">
+          <p class="eyebrow">A little celebration of everything you are</p>
+          <h2>A Celebration <em>of You</em></h2>
+          <p class="intro-copy">Every person has a story that goes beyond what the world sees.</p>
+          <p class="body-copy centered">There is the journey built through dreams, dedication and accomplishments. And then there is the person behind it all, the smiles, the warmth and the little moments that make someone special.</p>
+          <p class="body-copy centered">Today, we celebrate both.</p>
+          <div class="ornament"><span></span>✧<span></span></div>
+        </header>
+        <div class="feature-grid">
+          <button class="feature-card professional-card" data-go="legacy">
+            <div class="card-image"><img src="images/professional-main.jpg" alt="Dr. Indumathi Somasundaram" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Your photograph will appear here</span></div>
+            <div class="feature-card-copy"><span class="card-kicker">HER PROFESSIONAL WORLD</span><h3>A Legacy in<br><em>the Making</em></h3><p>A journey of knowledge, research, creativity, achievements and possibilities.</p><span class="text-link">Explore Your Journey <b>↗</b></span></div>
+          </button>
+          <button class="feature-card personal-card" data-go="soul">
+            <div class="card-image"><img src="images/soul-01.jpg" alt="A lovely portrait of Mam" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Your photograph will appear here</span></div>
+            <div class="feature-card-copy"><span class="card-kicker">THE PERSON BEHIND IT ALL</span><h3>The Beautiful<br><em>Soul</em></h3><p>A celebration of your personality, your warmth, your beautiful moments and everything that makes you YOU.</p><span class="text-link">Discover the Person <b>↗</b></span></div>
+          </button>
+          <button class="feature-card letter-card" data-go="letter">
+            <div class="letter-card-art"><div class="mini-envelope"><span>♥</span></div><span class="floating-star">✧</span></div>
+            <div class="feature-card-copy"><span class="card-kicker">A PERSONAL NOTE</span><h3>A Letter<br><em>From Me</em></h3><p>A little something written especially for you, with admiration, gratitude and affection.</p><span class="text-link">Open My Letter <b>↗</b></span></div>
+          </button>
+        </div>
+        <div class="back-home"><button class="text-button" data-go="home">← Back to birthday wish</button></div>
+      </div>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page" id="legacy" data-page="legacy">
+      <div class="page-shell narrow-shell">
+        <header class="page-heading">
+          <p class="eyebrow">A journey shaped by ideas and possibility</p>
+          <h2>A Legacy <em>in the Making</em></h2>
+          <p class="tagline">Driven by curiosity. Defined by knowledge. Inspired by possibilities.</p>
+          <div class="portrait-frame large-portrait"><img src="images/professional-main.jpg" alt="Professional portrait of Dr. Indumathi" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add professional-main.jpg</span></div>
+          <p class="body-copy">Some journeys are not measured merely by milestones, but by the knowledge shared, ideas explored and possibilities created along the way.</p>
+          <p class="body-copy">Your journey reflects a beautiful combination of curiosity, creativity, determination and an endless desire to grow.</p>
+        </header>
+
+        <article class="identity-row">
+          <div class="identity-photo"><img src="images/the-seeker.jpg" alt="The Seeker" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add the-seeker.jpg</span></div>
+          <div class="identity-copy"><span class="identity-number">01</span><h3>The Seeker</h3><p class="identity-tagline">For a mind that never stops questioning.</p><p>Always curious, always exploring, finding inspiration in questions and possibilities yet to be discovered.</p></div>
+        </article>
+        <article class="identity-row reverse">
+          <div class="identity-photo"><img src="images/the-wordsmith.jpg" alt="The Wordsmith" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add the-wordsmith.jpg</span></div>
+          <div class="identity-copy"><span class="identity-number">02</span><h3>The Wordsmith</h3><p class="identity-tagline">For the power to turn knowledge into words.</p><p>Transforming thoughts, experiences and knowledge into words that educate, enlighten and leave a lasting impression.</p></div>
+        </article>
+        <article class="identity-row">
+          <div class="identity-photo"><img src="images/the-visionary.jpg" alt="The Visionary" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add the-visionary.jpg</span></div>
+          <div class="identity-copy"><span class="identity-number">03</span><h3>The Visionary</h3><p class="identity-tagline">For the courage to turn possibilities into reality.</p><p>Seeing beyond what exists, imagining what could be and creating opportunities that bring meaningful ideas to life.</p></div>
+        </article>
+        <article class="identity-row reverse">
+          <div class="identity-photo"><img src="images/the-evolving-mind.jpg" alt="The Ever-Evolving Mind" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add the-evolving-mind.jpg</span></div>
+          <div class="identity-copy"><span class="identity-number">04</span><h3>The Ever-Evolving Mind</h3><p class="identity-tagline">For a spirit that never stops growing.</p><p>Believing that every experience holds a lesson and every new day brings another opportunity to learn, discover and evolve.</p></div>
+        </article>
+
+        <footer class="closing-tribute">
+          <div class="ornament"><span></span>✧<span></span></div>
+          <h3>A Journey That Continues <em>to Inspire</em></h3>
+          <p>Knowledge becomes meaningful when it is shared. Dreams become powerful when they are pursued. And a journey becomes extraordinary when it continues to inspire others.</p>
+          <p class="closing-line">Four beautiful expressions. One remarkable journey. Countless possibilities ahead.</p>
+        </footer>
+        <div class="page-nav"><button class="text-button" data-go="celebration">← Back</button><button class="gold-button" data-go="soul">Continue <span>→</span></button></div>
+      </div>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page" id="soul" data-page="soul">
+      <div class="page-shell soul-shell">
+        <header class="page-heading">
+          <p class="eyebrow">A celebration of the person behind it all</p>
+          <h2>The Beautiful <em>Soul</em></h2>
+          <p class="tagline">Some people are beautiful in ways that go far beyond words.</p>
+        </header>
+        <div class="soul-story">
+          <figure class="soul-photo photo-tall"><img src="images/soul-01.jpg" alt="Mam's portrait" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add soul-01.jpg</span></figure>
+          <p class="soul-paragraph">Mam, there is something truly special about the way you embrace life.</p>
+          <p class="soul-paragraph">Your enthusiasm, your curiosity, your dreams and the way you continue to explore new possibilities make you someone worth celebrating.</p>
+          <div class="soul-photo-pair">
+            <figure class="soul-photo"><img src="images/soul-02.jpg" alt="A smiling photograph" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add soul-02.jpg</span></figure>
+            <figure class="soul-photo offset-photo"><img src="images/soul-03.jpg" alt="A candid photograph" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add soul-03.jpg</span></figure>
+          </div>
+          <p class="soul-paragraph">One thing I genuinely admire about you is the way you manage things. Balancing so many responsibilities, handling different situations and still finding the energy to pursue what matters to you is no small thing. Your ability to organise, lead and keep things moving is truly admirable.</p>
+          <figure class="soul-photo family-photo"><img src="images/soul-04.jpg" alt="A special family photograph" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add soul-04.jpg</span></figure>
+          <p class="soul-paragraph">And then there is the beautiful personal side of your life. Your sweet new family brings another lovely dimension to your journey. May this new chapter bring you endless togetherness, laughter, understanding and countless moments of happiness.</p>
+          <p class="soul-paragraph">I hope you never lose that spark, that beautiful smile, your enthusiasm or the curiosity that keeps taking you towards new experiences.</p>
+          <figure class="soul-photo leadership-photo"><img src="images/soul-05.jpg" alt="A photograph showing Mam's leadership side" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add soul-05.jpg</span></figure>
+          <p class="soul-paragraph">May you always find time for yourself, time for the people you love, and time for all those dreams waiting to become reality.</p>
+          <figure class="soul-photo occasion-photo"><img src="images/soul-06.jpg" alt="A special occasion" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add soul-06.jpg</span></figure>
+          <p class="soul-paragraph">May life bring you wonderful surprises, beautiful destinations, meaningful friendships and memories that make you smile whenever you look back.</p>
+          <div class="soul-photo-pair final-pair">
+            <figure class="soul-photo"><img src="images/soul-07.jpg" alt="An elegant portrait" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add soul-07.jpg</span></figure>
+            <figure class="soul-photo offset-photo"><img src="images/soul-08.jpg" alt="A happy memorable moment" onerror="this.parentElement.classList.add('image-missing')"><span class="image-placeholder">Add soul-08.jpg</span></figure>
+          </div>
+          <div class="soul-ending"><p>Today, we aren't celebrating a title, an achievement or a milestone.</p><p>We are celebrating the person behind it all.</p><h3>We are celebrating <em>YOU.</em></h3><p>And that, in itself, is something truly special.</p></div>
+        </div>
+        <div class="page-nav"><button class="text-button" data-go="celebration">← Back</button><button class="gold-button" data-go="letter">A letter for you <span>→</span></button></div>
+      </div>
+    </section>
+
+    <!-- PAGE 5 -->
+    <section class="page" id="letter" data-page="letter">
+      <div class="page-shell letter-shell">
+        <header class="page-heading">
+          <p class="eyebrow">A few words, written from the heart</p>
+          <h2>A Letter <em>From Me</em></h2>
+          <p class="tagline">Some words are too special to be left unsaid...</p>
+        </header>
+        <div class="letter-intro" id="letterIntro">
+          <div class="letter-envelope"><span>♥</span></div>
+          <p>There is something I wanted you to read...</p>
+          <button class="gold-button" id="openLetter">OPEN MY LETTER</button>
+        </div>
+        <article class="letter-paper" id="letterPaper" aria-hidden="true">
+          <div class="paper-flower">✧</div>
+          <p class="letter-dear">Dear Mam,</p>
+          <p>I don't really know where to begin, because when someone holds a special place in your life, putting that feeling into words is never easy.</p>
+          <p>But today, beyond all the birthday wishes, photographs and celebrations, I wanted to write something that comes straight from my heart.</p>
+          <p>First of all, I genuinely admire you. And when I say that, I don't mean just your professional achievements or the things you've accomplished. I admire the person behind them.</p>
+          <p>Your curiosity, determination, creativity and the way you approach life are truly inspiring. You have so many things happening around you, so many responsibilities to manage, and yet you continue to explore new ideas, take up new challenges and turn your thoughts into reality. I admire how you make space for your ambitions while managing everything else that life brings along.</p>
+          <p>What I particularly admire is that you never limit yourself to just one thing. There's always something new to explore, something to learn, something to create. You carry so many different ideas and aspirations, and it's wonderful to see you bring them to life in your own way.</p>
+          <p>There is something about the way you carry yourself that I genuinely respect. Your knowledge, your vision, your ability to manage things and your determination have taught me that there is always room to think bigger, learn more and become better.</p>
+          <p>And beyond everything you do, I wish you the happiest personal life too.</p>
+          <p>Seeing you begin a beautiful new chapter with your family makes me genuinely happy. May this new phase bring you all the love, companionship, laughter and peace that life has to offer. May your home always be filled with warmth, happiness and countless beautiful memories.</p>
+          <p>Aapne life mein itne saare roles beautifully manage kiye hain, and I hope you get to enjoy every little moment along the way too. I hope you continue exploring the world, travelling to beautiful places, discovering new interests, pursuing everything that excites you and collecting memories that stay with you forever.</p>
+          <p>I hope you always have people around you who appreciate you, support you, celebrate your successes and stand beside you through every phase of life.</p>
+          <p>And Mam, thank you for being someone I genuinely look up to. Thank you for your guidance, your encouragement, your trust and the opportunities to learn from you. I might not express it very often, but I truly value it.</p>
+          <p>If there's one thing I wish for you, it's that life keeps surprising you in the most beautiful ways.</p>
+          <p>More achievements, more adventures, more reasons to smile, more dreams turning into reality and, above all, good health, peace and happiness.</p>
+          <p>May you always have the courage to explore new possibilities, the strength to handle every challenge and the happiness of enjoying everything you've worked so hard to build.</p>
+          <p class="letter-birthday">Happy Birthday, Mam!</p>
+          <p>Stay curious. Stay ambitious. Keep creating magic wherever you go.</p>
+          <p>And please remember, there are people who genuinely admire you, believe in you and wish nothing but the very best for you.</p>
+          <div class="letter-signoff"><span>With lots of respect, gratitude and warm wishes,</span><strong>Shrikant <i>♥</i></strong></div>
+        </article>
+        <div class="letter-finish"><p>May the year ahead be as wonderful as you are.</p><button class="text-button" data-go="home">↶ Revisit the birthday wish</button></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
